@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "Remove FB Stories",
+    "description": "Extension removes Stories section from FB page",
+    "version": "1.0.0",
+    "icons": {
+        "16": "assets/icons/icon-16.jpg",
+        "19": "assets/icons/icon-19.jpg",
+        "32": "assets/icons/icon-32.jpg",
+        "48": "assets/icons/icon-48.jpg",
+        "64": "assets/icons/icon-64.jpg",
+        "128": "assets/icons/icon-128.jpg",
+        "256": "assets/icons/icon-256.jpg",
+        "512": "assets/icons/icon-512.jpg"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "assets/icons/icon-16.jpg",
+            "19": "assets/icons/icon-19.jpg",
+            "32": "assets/icons/icon-32.jpg",
+            "48": "assets/icons/icon-48.jpg",
+            "64": "assets/icons/icon-64.jpg",
+            "128": "assets/icons/icon-128.jpg",
+            "256": "assets/icons/icon-256.jpg",
+            "512": "assets/icons/icon-512.jpg"
+        }
+    },
+    "content_scripts": [
+        {
+            "run_at" : "document_end",
+            "js": ["main.js"],
+            "matches": [
+                "https://www.facebook.com/*",
+                "https://touch.facebook.com/*",
+                "https://m.facebook.com/*"
+            ]
+        }
+    ]
+}

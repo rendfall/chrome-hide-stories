@@ -25,7 +25,6 @@ function getAllSelectors(selectorsQuery, options = {}) {
 
         let taskId = setInterval(() => {
             const $selectors = document.querySelectorAll(query);
-            console.log('interval:', $selectors);
 
             if ($selectors.length > 0) {
                 clearInterval(taskId);

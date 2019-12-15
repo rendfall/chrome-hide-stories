@@ -1,20 +1,35 @@
-const STORY_SELECTOR_QUERY = '[aria-label="Stories"]';
+const STORIES_SELECTOR_QUERIES = [
+    '[id="fb_stories_card_root"]', // Classic theme (before X.2019)
+    '[aria-label="Stories"]', // Light/Dark Mode theme (after X.2019)
+];
 const ERROR_NOT_FOUND_MSG = 'Timeout: No Stories has been found';
-const DEFAULT_INTERVAL_MS = 0.25 * 1000;
-const DEFAULT_INTERVAL_LIMIT_MS = 5 * 1000;
+const DEFAULT_OPTIONS = {
+    timeout: 0.25 * 1000,
+    limit:  20 * 1000,
+};
 
-function searchSelector(selectorQuery, options = {}) {
+function removeAll($selectors) {
+    $selectors
+        .forEach(($selector) => $selector.remove());
+}
+
+function parseOptions(options = {}) {
+    return Object.assign({}, DEFAULT_OPTIONS, options);
+}
+
+function getAllSelectors(selectorsQuery, options = {}) {
     return new Promise((resolve, reject) => {
-        const timeout = options.timeout || DEFAULT_INTERVAL_MS;
-        const limit = options.limit || DEFAULT_INTERVAL_LIMIT_MS;
+        const { timeout, limit } = parseOptions(options);
+        const query = selectorsQuery.join(',');
         let ts = 0;
 
         let taskId = setInterval(() => {
-            const $selector = document.querySelector(selectorQuery);
+            const $selectors = document.querySelectorAll(query);
+            console.log('interval:', $selectors);
 
-            if ($selector !== null) {
+            if ($selectors.length > 0) {
                 clearInterval(taskId);
-                resolve($selector);
+                resolve($selectors);
             }
 
             if (ts >= limit) {
@@ -27,10 +42,8 @@ function searchSelector(selectorQuery, options = {}) {
     });
 }
 
-searchSelector(STORY_SELECTOR_QUERY)
-    .then(($selector) => {
-        $selector.remove();
-    })
+getAllSelectors(STORIES_SELECTOR_QUERIES)
+    .then(($selectors) => removeAll($selectors))
     .catch((err) => {
         console.warn(err);
     });

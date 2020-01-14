@@ -1,6 +1,6 @@
 {
-  "name": "chrome-remove-fb-stories",
-  "version": "1.0.2",
+  "name": "chrome-hide-stories",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rendfall/chrome-remove-fb-stories.git"
+    "url": "git+https://github.com/rendfall/chrome-hide-stories.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rendfall/chrome-remove-fb-stories/issues"
+    "url": "https://github.com/rendfall/chrome-hide-stories/issues"
   },
-  "homepage": "https://github.com/rendfall/chrome-remove-fb-stories#readme"
+  "homepage": "https://github.com/rendfall/chrome-hide-stories#readme"
 }

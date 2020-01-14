@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Remove FB Stories",
-    "description": "Extension removes Stories section from FB page",
+    "name": "Hide Stories",
+    "description": "Extension hides Stories section from popular American online social media and social networking service",
     "version": "1.0.3",
     "icons": {
         "16": "assets/icons/icon-16.jpg",

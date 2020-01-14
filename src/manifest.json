@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Remove FB Stories",
     "description": "Extension removes Stories section from FB page",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
         "16": "assets/icons/icon-16.jpg",
         "19": "assets/icons/icon-19.jpg",

@@ -4,25 +4,25 @@
     "description": "Extension hides Stories section from popular American online social media and social networking service",
     "version": "1.0.3",
     "icons": {
-        "16": "assets/icons/icon-16.jpg",
-        "19": "assets/icons/icon-19.jpg",
-        "32": "assets/icons/icon-32.jpg",
-        "48": "assets/icons/icon-48.jpg",
-        "64": "assets/icons/icon-64.jpg",
-        "128": "assets/icons/icon-128.jpg",
-        "256": "assets/icons/icon-256.jpg",
-        "512": "assets/icons/icon-512.jpg"
+        "16": "assets/icons/icon-16.png",
+        "19": "assets/icons/icon-19.png",
+        "32": "assets/icons/icon-32.png",
+        "48": "assets/icons/icon-48.png",
+        "64": "assets/icons/icon-64.png",
+        "128": "assets/icons/icon-128.png",
+        "256": "assets/icons/icon-256.png",
+        "512": "assets/icons/icon-512.png"
     },
     "browser_action": {
         "default_icon": {
-            "16": "assets/icons/icon-16.jpg",
-            "19": "assets/icons/icon-19.jpg",
-            "32": "assets/icons/icon-32.jpg",
-            "48": "assets/icons/icon-48.jpg",
-            "64": "assets/icons/icon-64.jpg",
-            "128": "assets/icons/icon-128.jpg",
-            "256": "assets/icons/icon-256.jpg",
-            "512": "assets/icons/icon-512.jpg"
+            "16": "assets/icons/icon-16.png",
+            "19": "assets/icons/icon-19.png",
+            "32": "assets/icons/icon-32.png",
+            "48": "assets/icons/icon-48.png",
+            "64": "assets/icons/icon-64.png",
+            "128": "assets/icons/icon-128.png",
+            "256": "assets/icons/icon-256.png",
+            "512": "assets/icons/icon-512.png"
         }
     },
     "content_scripts": [

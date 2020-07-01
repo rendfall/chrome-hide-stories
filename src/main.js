@@ -1,6 +1,7 @@
 const STORIES_SELECTOR_QUERIES = [
-    '[id="fb_stories_card_root"]', // Classic theme (before X.2019)
-    '[aria-label="Stories"]', // Light/Dark Mode theme (after X.2019)
+    '[id="fb_stories_card_root"]', // Classic theme (before ?.2019)
+    '[aria-label="Stories"]', // Light/Dark Mode theme (after ?.2019)
+    '[data-pagelet="Stories"]', // Light/Dark Mode theme (after 07.2020)
 ];
 const ERROR_NOT_FOUND_MSG = 'Timeout: No Stories has been found';
 const DEFAULT_OPTIONS = {
